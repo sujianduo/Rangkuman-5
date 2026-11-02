@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Informatika Kelas 5 - Bab 3 Sistem Komputer</title>
+<title>Informatika Kelas 5 - Bab 4 Jaringan Komputer dan Internet</title>
 <style>
 *{box-sizing:border-box}
 body{
@@ -19,7 +19,7 @@ header{
   text-align:center;
   padding:35px 18px;
 }
-header h1{margin:0 0 8px;font-size:clamp(26px,5vw,40px)}
+header h1{margin:0 0 8px;font-size:clamp(24px,5vw,38px)}
 header p{margin:4px 0;font-size:16px}
 .container{width:min(1100px,92%);margin:25px auto}
 .section-title{
@@ -29,7 +29,7 @@ header p{margin:4px 0;font-size:16px}
 }
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:18px
 }
 .card{
@@ -85,28 +85,28 @@ table{
 }
 th,td{padding:12px;border:1px solid #d9e8f2;text-align:left}
 th{background:#dff2ff;color:#1261a0}
-		.button-box{
-			text-align:center;
-			margin-top:30px;
-		}
+.button-box{
+  text-align:center;
+  margin-top:35px;
+}
 
-		.btn{
-			display:inline-block;
-			text-decoration:none;
-			padding: 22px 48px;
-			border-radius: 50px;
-			background: linear-gradient(90deg, #c084fc, #22d3ee);
-			color: white;
-			font-weight: 700;
-			font-size: 1.2rem;
-			transition: .3s;
-			box-shadow: 0 4px 15px rgba(192, 132, 252, 0.3);
-		}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #c084fc, #22d3ee);
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: .3s;
+  box-shadow: 0 4px 15px rgba(192, 132, 252, 0.3);
+}
 
-		.btn:hover{
-			transform: scale(1.05);
-			box-shadow: 0 0 25px rgba(34, 211, 238, .5);
-		}
+.btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(34, 211, 238, .5);
+}
 footer{
   margin-top:40px;
   background:#1261a0;
@@ -126,118 +126,123 @@ footer{
 <body>
 
 <header>
-  <h1>💻 Sistem Komputer</h1>
-  <p>Informatika • Fase C Kelas V • Bab 3</p>
+  <h1>🌐 Jaringan Komputer dan Internet</h1>
+  <p>Informatika • Fase C Kelas V • Bab 4</p>
   <p>SD Widya Dharma Banjarmasin</p>
 </header>
 
 <main class="container">
 
-<h2 class="section-title">🎯 Tujuan Pembelajaran</h2>
+<h2 class="section-title">🎯 Ringkasan Utama Materi Sumatif</h2>
 <div class="card">
-  <p><strong>Memahami tiga elemen utama penyusun komputer:</strong>
-  Perangkat Keras (Hardware), Perangkat Lunak (Software), dan Pengguna (Brainware).</p>
+  <p><strong>Materi Sumatif Harian Bab 4 mencakup:</strong>
+  Konsep dasar jaringan komputer & Internet, fungsi Router dan Switch, pengiriman paket data & IP address, jenis aplikasi komunikasi (Pesan Instan vs Email), pembuatan Kata Sandi (Password) yang kuat, serta keamanan digital (Phishing, Link Fake, Wi-Fi Publik).</p>
 </div>
 
-<h2 class="section-title">🧩 3 Elemen Utama Sistem Komputer</h2>
+<h2 class="section-title">🌐 1. Jaringan Komputer & Internet</h2>
 <div class="grid">
   <div class="card">
     <div class="icon">🖥️</div>
-    <span class="badge">1. Hardware</span>
-    <h3>Perangkat Keras</h3>
-    <p>Seluruh komponen fisik komputer yang dapat dilihat, disentuh, dan dipindahkan secara langsung.</p>
+    <span class="badge">Definisi</span>
+    <h3>Jaringan Komputer</h3>
+    <p>Sekumpulan perangkat komputer yang saling terhubung satu sama lain melalui media transmisi sehingga dapat saling <strong>berbagi data, informasi, dan sumber daya</strong>.</p>
   </div>
   <div class="card">
-    <div class="icon">⚙️</div>
-    <span class="badge">2. Software</span>
-    <h3>Perangkat Lunak</h3>
-    <p>Program dan sistem operasi yang mengontrol dan mengelola seluruh sumber daya perangkat keras.</p>
+    <div class="icon">🌍</div>
+    <span class="badge">Definisi</span>
+    <h3>Internet</h3>
+    <p>Jaringan komputer <strong>global</strong> yang menghubungkan jutaan komputer di seluruh dunia secara bersama-sama.</p>
   </div>
   <div class="card">
-    <div class="icon">👨‍💻</div>
-    <span class="badge">3. Brainware</span>
-    <h3>Pengguna Komputer</h3>
-    <p>Manusia yang bertugas mengoperasikan, mengendalikan, dan memanfaatkan perangkat komputer.</p>
+    <div class="icon">📦</div>
+    <span class="badge">Proses Pengiriman</span>
+    <h3>Paket Data & Alamat IP</h3>
+    <p>Saat mencari video di YouTube, permintaan dikirim ke server web dalam bentuk <strong>paket data</strong> yang ditujukan ke <strong>Alamat IP server web</strong>.</p>
   </div>
 </div>
 
-<h2 class="section-title">⌨️ Perangkat Input</h2>
+<h2 class="section-title">🔀 2. Perangkat Jaringan Utama</h2>
 <div class="grid">
-  <div class="card"><h3>Fungsi</h3><p>Memasukkan data dan memberikan perintah ke dalam sistem komputer untuk diproses.</p></div>
-  <div class="card"><h3>Ketukan & Sentuhan</h3><p>Keyboard, Mouse, Touchpad, Layar Sentuh.</p></div>
-  <div class="card"><h3>Suara & Perintah Lisan</h3><p>Microphone & Voice Recognition.</p></div>
-  <div class="card"><h3>Gerakan & Visual</h3><p>Mocap Device, Scanner, Kamera.</p></div>
+  <div class="card">
+    <div class="icon">📡</div>
+    <span class="badge">Perangkat 1</span>
+    <h3>Router</h3>
+    <p>Perangkat jaringan yang bertugas <strong>mencari jalur atau rute tercepat</strong> dalam pengiriman paket data di internet.</p>
+  </div>
+  <div class="card">
+    <div class="icon">🔌</div>
+    <span class="badge">Perangkat 2</span>
+    <h3>Switch</h3>
+    <p>Perangkat keras yang berfungsi <strong>menghubungkan beberapa komputer dalam satu jaringan lokal (LAN)</strong>.</p>
+  </div>
 </div>
 
-<h2 class="section-title">🧠 Perangkat Processing</h2>
+<h2 class="section-title">💬 3. Aplikasi Komunikasi TIK</h2>
+<div class="grid">
+  <div class="card">
+    <h3>📱 Pesan Instan (Instant Messaging)</h3>
+    <p>Layanan untuk mengirim pesan teks, foto, audio, atau video secara <strong>langsung dan instan</strong> kepada pengguna lain.</p>
+    <p><strong>Contoh Aplikasi:</strong> WhatsApp, Telegram, Line.</p>
+  </div>
+  <div class="card">
+    <h3>📧 Surat Elektronik (E-Mail)</h3>
+    <p>Aplikasi komunikasi untuk mengirim surat secara digital/elektronik yang memiliki struktur formal (seperti ada <strong>subjek dan isi pesan</strong>) mirip surat pos.</p>
+    <p><strong>Contoh Layanan:</strong> Gmail, Yahoo! Mail.</p>
+  </div>
+</div>
+
+<h2 class="section-title">🔑 4. Komponen Kata Sandi (Password) yang Kuat</h2>
 <div class="card">
-  <h3>CPU (Processor) — Otak Komputer</h3>
+  <h3>Karakteristik & Syarat Password Kuat</h3>
+  <p>Kata sandi yang kuat bertujuan menjaga keamanan akun dari peretas (hackers):</p>
   <ul>
-    <li><strong>Central Processing Unit:</strong> mengolah semua perintah dan data.</li>
-    <li><strong>Pengolahan Data Biner:</strong> mengolah data dalam bentuk bilangan biner (0 dan 1).</li>
-    <li><strong>Kecepatan Proses:</strong> menentukan seberapa cepat komputer menjalankan aplikasi.</li>
-    <li><strong>Komponen pendukung:</strong> RAM, Power Supply, dan VGA Card.</li>
+    <li><strong>Jumlah Karakter:</strong> Terdiri dari <strong>minimal 8 karakter</strong>.</li>
+    <li><strong>Kombinasi Karakter:</strong> Gabungan dari <strong>huruf kapital, huruf kecil, angka, dan simbol</strong>.</li>
+    <li><strong>Prinsip Utama:</strong> <strong>Mudah diingat</strong> oleh pemiliknya, tetapi <strong>susah/sulit ditebak</strong> oleh orang lain.</li>
+    <li><strong>Hindari:</strong> Nama pribadi, tanggal lahir, angka berurutan (misal: 12345678), atau kata sandi yang terlalu pendek/lemah.</li>
   </ul>
 </div>
 
-<h2 class="section-title">🖨️ Perangkat Output</h2>
-<div class="grid">
-  <div class="card"><h3>🖥️ Monitor</h3><p>Menampilkan gambar, teks, dan video pada layar.</p></div>
-  <div class="card"><h3>🖨️ Printer</h3><p>Mencetak hasil dokumen dan gambar pada kertas.</p></div>
-  <div class="card"><h3>🔊 Speaker</h3><p>Mengeluarkan sinyal suara yang diolah oleh sound card.</p></div>
-  <div class="card"><h3>📽️ Proyektor</h3><p>Memancarkan tampilan layar ke permukaan dinding atau kain.</p></div>
-</div>
-
-<h2 class="section-title">💾 Perangkat Penyimpanan</h2>
+<h2 class="section-title">🛡️ 5. Keamanan Digital & Proteksi Data Pribadi</h2>
 <div class="grid">
   <div class="card">
-    <h3>RAM — Volatile</h3>
-    <p><strong>Penyimpanan sementara.</strong></p>
-    <p>Data hilang/terhapus otomatis saat komputer dimatikan. Digunakan untuk menyimpan data aplikasi yang sedang aktif.</p>
+    <h3>🔒 Cara Melindungi Data Pribadi</h3>
+    <ul>
+      <li>Membuat kata sandi yang kuat dan tidak membagikannya ke orang lain.</li>
+      <li>Tidak menyebarkan nomor telepon, alamat rumah, atau identitas pribadi di media sosial.</li>
+      <li>Gunakan aplikasi resmi dan selalu diperbarui.</li>
+    </ul>
   </div>
   <div class="card">
-    <h3>Harddisk, SSD, Flashdisk</h3>
-    <p><strong>Non-Volatile / Penyimpanan permanen.</strong></p>
-    <p>Data tetap tersimpan meskipun listrik atau komputer padam. Digunakan untuk file, sistem operasi, dan game.</p>
-  </div>
-</div>
-
-<h2 class="section-title">⚙️ Perangkat Lunak</h2>
-<div class="grid">
-  <div class="card">
-    <h3>Operating System</h3>
-    <p>Perangkat lunak utama yang mengontrol dan mengelola seluruh sumber daya hardware.</p>
-    <p><strong>Contoh:</strong> Windows, Linux, macOS.</p>
+    <h3>⚠️ Phishing & Link Mencurigakan</h3>
+    <p><strong>Phishing</strong> adalah kejahatan digital berupa penipuan untuk mencuri data pribadi/kata sandi dengan menyamar sebagai pihak resmi melalui tautan (link) palsu.</p>
+    <p><em>Jangan mengeklik link sembarangan karena dapat mengandung malware atau phishing!</em></p>
   </div>
   <div class="card">
-    <h3>Program Aplikasi</h3>
-    <p>Software khusus yang dibuat untuk membantu pekerjaan spesifik pengguna sehari-hari.</p>
-    <p><strong>Contoh:</strong> Microsoft Word, Web Browser, Game.</p>
+    <h3>📶 Bahaya Wi-Fi Publik</h3>
+    <p>Hindari menggunakan jaringan <strong>Wi-Fi publik di tempat umum tanpa pengamanan</strong> untuk mencegah pencurian data pribadi oleh peretas.</p>
   </div>
 </div>
 
-<h2 class="section-title">👨‍💻 Brainware</h2>
-<div class="grid">
-  <div class="card"><h3>Operator / User</h3><p>Pengguna biasa yang menjalankan aplikasi untuk tugas sehari-hari.</p></div>
-  <div class="card"><h3>Programmer</h3><p>Pembuat kode program dan aplikasi perangkat lunak.</p></div>
-  <div class="card"><h3>System Administrator</h3><p>Pengelola dan pemelihara keamanan sistem komputer.</p></div>
-</div>
-
-<h2 class="section-title">🔄 Alur Kerja Sistem Komputer</h2>
+<h2 class="section-title">🔄 6. Cara Kerja Pengiriman Data di Internet</h2>
 <div class="flow">
-  <div class="step"><div class="icon">⌨️</div><h3>1. Input</h3><p>Perintah masuk melalui Keyboard / Mouse.</p></div>
-  <div class="step"><div class="icon">🧠</div><h3>2. Process</h3><p>CPU mengolah data biner secara cepat.</p></div>
-  <div class="step"><div class="icon">💾</div><h3>3. Storage</h3><p>Penyimpanan sementara RAM / Harddisk.</p></div>
-  <div class="step"><div class="icon">🖥️</div><h3>4. Output</h3><p>Hasil tampil di Monitor / Printer / Speaker.</p></div>
+  <div class="step"><div class="icon">⌨️</div><h3>1. Permintaan</h3><p>Pengguna mencari data/video di internet.</p></div>
+  <div class="step"><div class="icon">📦</div><h3>2. Paket Data</h3><p>Permintaan diubah jadi paket data ber-Alamat IP Server Web.</p></div>
+  <div class="step"><div class="icon">📡</div><h3>3. Router & Switch</h3><p>Router cari rute tercepat, Switch hubungkan jaringan lokal.</p></div>
+  <div class="step"><div class="icon">💻</div><h3>4. Diterima</h3><p>Paket data sampai di tujuan dan ditampilkan di layar gawai.</p></div>
 </div>
 
-<h2 class="section-title">📌 Poin Penting</h2>
+<h2 class="section-title">📌 Matriks</h2>
 <table>
-<tr><th>Komponen / Istilah</th><th>Fungsi Utama</th><th>Catatan</th></tr>
-<tr><td>CPU / Processor</td><td>Otak komputer pengolah data biner</td><td>Mengolah seluruh perintah masukan</td></tr>
-<tr><td>RAM Memory</td><td>Penyimpanan memori sementara</td><td>Data terhapus saat komputer mati</td></tr>
-<tr><td>Harddisk / SSD</td><td>Penyimpanan media permanen</td><td>Menyimpan file dan OS jangka panjang</td></tr>
-<tr><td>Sound Card & Speaker</td><td>Pengolah & pengeluar suara</td><td>Menghasilkan keluaran audio</td></tr>
+<tr><th>Konsep / Pertanyaan</th><th>Jawaban Utama</th></tr>
+<tr><td>Definisi Internet</td><td>Jaringan komputer global yang menghubungkan jutaan komputer di dunia</td></tr>
+<tr><td>Router</td><td>Mencari rute/jalur tercepat pengiriman paket data</td></tr>
+<tr><td>Switch</td><td>Menghubungkan beberapa komputer dalam satu jaringan lokal (LAN)</td></tr>
+<tr><td>Email (Surat Elektronik)</td><td>Kirim surat elektronik berpola subjek & isi pesan. Contoh: Gmail, Yahoo! Mail</td></tr>
+<tr><td>Pesan Instan</td><td>Kirim pesan teks/media secara langsung. Contoh: WhatsApp, Telegram, Line</td></tr>
+<tr><td>Syarat Password Kuat</td><td>Minimal 8 karakter, kombinasi huruf kapital, huruf kecil, angka, dan simbol</td></tr>
+<tr><td>Phishing</td><td>Penipuan mencuri data pribadi dengan berpura-pura menjadi pihak resmi via link palsu</td></tr>
+<tr><td>Melindungi Data Pribadi</td><td>1. Buat password kuat & rahasia<br>2. Jangan klik link sembarangan<br>3. Hindari Wi-Fi publik sembarangan</td></tr>
 </table>
 
 </main>
@@ -247,8 +252,8 @@ footer{
 		</a>
 	</div>
 <footer>
-  <strong>Selamat Belajar & Sukses Asesmen!</strong><br>
-  Informatika SD • Kelas V • Bab 3 Sistem Komputer
+  <strong>Selamat Belajar & Sukses Asesmen Sumatif!</strong><br>
+  Informatika SD • Kelas V • Bab 4 Jaringan Komputer dan Internet
 </footer>
 
 </body>
